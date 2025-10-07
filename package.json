@@ -1,7 +1,7 @@
-  {
+{
   "name": "supabase-telegram-bot",
-  "version": "1.0.0",
-  "description": "A Telegram bot that saves members to Supabase, ready to run 24/7 on Render.",
+  "version": "1.1.0",
+  "description": "Telegram bot with /add, /tag, /explain commands integrated with Supabase, ready to run 24/7 on Render.",
   "main": "bot.js",
   "type": "module",
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
+    "axios": "^1.6.6",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "telegraf": "^4.16.3"
@@ -25,9 +26,11 @@
     "telegraf",
     "supabase",
     "bot",
-    "render",
-    "nodejs"
+    "nodejs",
+    "axios",
+    "express"
   ],
   "author": "Regnis",
   "license": "MIT"
+
 }
